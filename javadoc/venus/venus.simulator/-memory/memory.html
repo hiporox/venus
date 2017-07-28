@@ -1,0 +1,19 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Memory.memory - venus</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">venus</a>&nbsp;/&nbsp;<a href="../index.html">venus.simulator</a>&nbsp;/&nbsp;<a href="index.html">Memory</a>&nbsp;/&nbsp;<a href=".">memory</a><br/>
+<br/>
+<h1>memory</h1>
+<a name="venus.simulator.Memory$memory"></a>
+<code><span class="keyword">val </span><span class="identifier">memory</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code>
+<p>A hashmap which maps addresses to the value stored at that place in memory.</p>
+<p>Unlike MARS, I've made the design decision to use a hashmap. This allows for us to write anywhere in memory
+without being concerned with writing out of bounds (4 MB). The downside is that this has a higher overhead.</p>
+<p><strong>Todo</strong><br/>
+Transition to a <code>HashMap&lt;Int, Int&gt;</code>, which will have a smaller overhead (although more code complexity)</p>
+</BODY>
+</HTML>
